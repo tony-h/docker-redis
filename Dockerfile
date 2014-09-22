@@ -1,7 +1,9 @@
 # https://github.com/instructure/canvas-lms/wiki/Production-Start#redis
 # https://docs.docker.com/examples/running_redis_service/
 
-FROM matte-mooc:base
+FROM ubuntu:12.04
+
+RUN apt-get -y update
 
 RUN apt-get install -y software-properties-common python-software-properties
 RUN add-apt-repository ppa:chris-lea/redis-server
