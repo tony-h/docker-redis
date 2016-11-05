@@ -1,7 +1,7 @@
 # https://github.com/instructure/canvas-lms/wiki/Production-Start#redis
 # https://docs.docker.com/examples/running_redis_service/
 
-FROM ubuntu:12.04
+FROM ubuntu:14.04
 
 RUN apt-get -y update
 
